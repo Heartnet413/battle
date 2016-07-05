@@ -1,0 +1,33 @@
+body{
+	width: 1200px;
+}
+.header{
+	text-align: center;
+	font-size: 30px;
+    font-style: italic;
+	text-shadow:1px 1px 1px #f00;
+}
+.left {
+	
+	float: left;
+	background-color: #CCFFFF
+}
+.right{
+	
+	float: right;
+	background-color: #FFCCCC
+}
+.box {
+	font-size: 20px;
+	width: 600px;
+	height: 600px;
+	text-align: center;
+
+}
+img {
+	display: none;
+	width:300px;
+	height:  auto;
+	margin: auto;
+	padding-top: 100px;
+}
