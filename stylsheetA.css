@@ -1,6 +1,4 @@
-body{
-	width: 1200px;
-}
+
 .header{
 	text-align: center;
 	font-size: 30px;
@@ -19,14 +17,14 @@ body{
 }
 .box {
 	font-size: 20px;
-	width: 600px;
-	height: 600px;
+	width: 50vw;
+	height: 50vw;
 	text-align: center;
 
 }
 img {
 	display: none;
-	width:300px;
+	width:50%;
 	height:  auto;
 	margin: auto;
 	padding-top: 100px;
