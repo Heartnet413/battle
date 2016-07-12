@@ -1,8 +1,21 @@
-$(function() {
+$('.left').hover(function() {
   
   
+  $(this).find('.pokariseibunn').fadeIn();
+
+},
+
+function(){
+	 $(this).find('.pokariseibunn').fadeOut();
+});
+  
+  $('.right').hover(function() {
   
   
-  $('.image').fadeIn(2000);
-  
+  $(this).find('.akueriseibunn').fadeIn();
+
+},
+
+function(){
+	 $(this).find('.akueriseibunn').fadeOut();
 });

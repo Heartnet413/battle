@@ -23,9 +23,17 @@
 
 }
 img {
-	display: none;
+	display:block;
 	width:50%;
 	height:  auto;
 	margin: auto;
 	padding-top: 100px;
+}
+.pokariseibunn{	
+	display: none;
+	padding-top: 20px;
+}
+.akueriseibunn{
+	display: none;
+	padding-top: 20px;
 }
