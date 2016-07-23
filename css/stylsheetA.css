@@ -30,14 +30,18 @@
     top: 90px;
     left: 30px;
     font-size: 50px
-    font-family:"角ゴシック";
+    color:white;
+    opacity: 0.5;
 }
 
 .east-name{
 	writing-mode: vertical-rl;
 	position: absolute;
 	top: 90px;
-	right: 30px
+	right: 30px;
+	font-size: 50px
+    color:white;
+    opacity: 0.5;
 }
 
 img {
