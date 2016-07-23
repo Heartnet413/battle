@@ -1,21 +1,21 @@
 $('.left').hover(function() {
   
   
-  $(this).find('.pokariseibunn').fadeIn();
+  $(this).find('.west-sentence').fadeIn();
 
 },
 
 function(){
-	 $(this).find('.pokariseibunn').fadeOut();
+	 $(this).find('.west-sentence').fadeOut();
 });
   
   $('.right').hover(function() {
   
-  $(this).find('.akueriseibunn').fadeIn();
+  $(this).find('.east-sentence').fadeIn();
 
 },
 
 function(){
-	 $(this).find('.akueriseibunn').fadeOut();
+	 $(this).find('.east-sentence ').fadeOut();
 });
 

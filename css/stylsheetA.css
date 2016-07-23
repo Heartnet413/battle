@@ -29,9 +29,11 @@
     position: absolute;
     top: 90px;
     left: 30px;
-    font-size: 50px
-    color:white;
-    opacity: 0.5;
+    color: white;
+    font-size: 50px;
+    opacity: 0.8;
+    font-weight: 900;
+    
 }
 
 .east-name{
@@ -39,9 +41,11 @@
 	position: absolute;
 	top: 90px;
 	right: 30px;
-	font-size: 50px
-    color:white;
-    opacity: 0.5;
+	color: white;
+    font-size: 50px;
+    opacity: 0.8;
+    font-weight: 900;
+    
 }
 
 img {
@@ -86,9 +90,9 @@ img {
 
 }
 .west-sentence{
-	margin-top: 40px;
+	margin: 40px;
 
 }
 .east-sentence{
-	margin-top: 40px;
+	margin: 40px;
 }
