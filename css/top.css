@@ -3,6 +3,10 @@ header{
 	 
 }
 
+.js-scrollFadein {
+	opacity: 0;
+}
+
 .top{
 	background-image: url("../images/top/fujinraijin.jpg");
 }
