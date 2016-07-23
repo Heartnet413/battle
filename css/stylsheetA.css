@@ -20,8 +20,26 @@
 	width: 50vw;
 	height: 50vw;
 	text-align: center;
+	position: relative;
 
 }
+.west-name{
+	display: inline-block;
+    writing-mode: vertical-rl;
+    position: absolute;
+    top: 90px;
+    left: 30px;
+    font-size: 50px
+    font-family:"角ゴシック";
+}
+
+.east-name{
+	writing-mode: vertical-rl;
+	position: absolute;
+	top: 90px;
+	right: 30px
+}
+
 img {
 	width:50%;
 	height: auto;
@@ -29,8 +47,13 @@ img {
 	padding-top: 100px;
 }
 .touhyoubtn{
-	padding-left: 42.2vw;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 100;
 }
+
 .btnleft{
 	display: inline-block;
 	height: 200px;
@@ -38,6 +61,8 @@ img {
 	border-radius: 100px 0 0 100px;
 	background-color: red;
 	text-align:center;
+	line-height: 200px;
+	color: white;
 }
 .btnright{
 	display: inline-block;
@@ -45,6 +70,9 @@ img {
 	width: 100px;
 	border-radius: 0 100px 100px 0;
 	background-color: blue;
+	line-height: 200px;
+	text-align: center;
+	color: white;
 
 }
 .middle{
@@ -53,9 +81,10 @@ img {
 .circle{
 
 }
-.pokariseibunn{
-	margin: 15px;
+.west-sentence{
+	margin-top: 40px;
+
 }
-.akueriseibunn{
-	margin: 15px;
+.east-sentence{
+	margin-top: 40px;
 }
