@@ -31,8 +31,7 @@
     left: 30px;
     color: white;
     font-size: 50px;
-    opacity: 0.8;
-    font-weight: 900;
+    font-weight:bold;
     
 }
 
@@ -43,8 +42,7 @@
 	right: 30px;
 	color: white;
     font-size: 50px;
-    opacity: 0.8;
-    font-weight: 900;
+    font-weight: bold;
     
 }
 
@@ -91,8 +89,10 @@ img {
 }
 .west-sentence{
 	margin: 40px;
+	color: gray;
 
 }
 .east-sentence{
 	margin: 40px;
+	color: gray;
 }
