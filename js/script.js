@@ -45,9 +45,12 @@ $('.btnright').click(function(){
     $('.next').slideDown(1000);
 });
 
-
-
-
+$('.btnright').click(function(){
+    $(this).removeClass("next");
+});
+$('.btnright').click(function(){
+    $(this).addClass("next");
+});
 
 
 
