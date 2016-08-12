@@ -1,4 +1,6 @@
-
+body {
+	overflow: hidden;
+}
 .header{
 	text-align: center;
 	font-size: 30px;
@@ -8,10 +10,11 @@
 .top{
 	position: relative;
 }
+
+
 .left {
 	float: left;
-	background-color: #CCFFFF;
-
+	background-color: #CCFFFF;	
 }
 .right{
 	position: absolute;
@@ -19,6 +22,7 @@
 	float: right;
 	background-color: #FFCCCC;
 }
+
 .box {
 	font-size: 20px;
 	width: 50vw;

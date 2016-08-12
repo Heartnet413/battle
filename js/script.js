@@ -1,61 +1,39 @@
-$('.left').hover(function() {
+// hoverの処理
+$('.left').hover(
+  function() {
+    $(this).find('.west-sentence').fadeIn();
+  },
+  function(){
+	  $(this).find('.west-sentence').fadeOut();
+  }
+);
   
-  
-  $(this).find('.west-sentence').fadeIn();
+$('.right').hover(
+  function() {  
+    $(this).find('.east-sentence').fadeIn();
+  },
+  function(){
+  	 $(this).find('.east-sentence').fadeOut();
+  }
+);
 
-},
 
-function(){
-	 $(this).find('.west-sentence').fadeOut();
+// フェードインアニメーション
+function fadeinAnime () {
+  $('.now').fadeOut(1000);
+  $('.next').slideDown(1000);
+}
+
+// ボタんクリック
+$('.btn').click(function(){
+  // アニメーしょん
+  fadeinAnime();
+
+  // クラスの付け替え（現在地の変更）
+  // ここでクラスの付け替え
+  $('.now').removeClass('now');
+  $('.next').addClass('now');
+  $('.next').removeClass('next');
 });
-  
-$('.right').hover(function() {
-  
-  $(this).find('.east-sentence').fadeIn();
-
-},
-
-function(){
-	 $(this).find('.east-sentence ').fadeOut();
-});
-
-$('.btnleft').click(function(){
-    //console.log('btnleftをクリックした');
-    $('.box').fadeOut(1000);
-    //$('.right').animate({
-    	//'top': '100vh'
-    //}, 1500);
-});
-
-
-$('.btnleft').click(function(){
-    $('.next').slideDown(1000);
-});
-
-$('.btnright').click(function(){
-    //console.log('btnleftをクリックした');
-    $('.box').fadeOut(1000);
-    //$('.right').animate({
-      //'top': '100vh'
-    //}, 1500);
-});
-
-
-$('.btnright').click(function(){
-    $('.next').slideDown(1000);
-});
-
-$('.btnright').click(function(){
-    $(this).removeClass("next");
-});
-$('.btnright').click(function(){
-    $(this).addClass("next");
-});
-
-
-
-
-
-
 
 
