@@ -24,7 +24,7 @@
 }
 .west-name{
 	display: inline-block;
-    writing-mode: vertical-rl;
+    -webkit-writing-mode: vertical-rl;
     position: absolute;
     top: 90px;
     left: 30px;
@@ -35,7 +35,7 @@
 }
 
 .east-name{
-	writing-mode: vertical-rl;
+	-webkit-writing-mode: vertical-rl;
 	position: absolute;
 	top: 90px;
 	right: 30px;
