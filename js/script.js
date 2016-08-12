@@ -9,7 +9,7 @@ function(){
 	 $(this).find('.west-sentence').fadeOut();
 });
   
-  $('.right').hover(function() {
+$('.right').hover(function() {
   
   $(this).find('.east-sentence').fadeIn();
 
