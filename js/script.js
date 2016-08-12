@@ -29,12 +29,20 @@ $('.btnleft').click(function(){
 
 
 $('.btnleft').click(function(){
-    $('.left').slideDown(1000);
+    $('.next').slideDown(1000);
+});
+
+$('.btnright').click(function(){
+    //console.log('btnleftをクリックした');
+    $('.box').fadeOut(1000);
+    //$('.right').animate({
+      //'top': '100vh'
+    //}, 1500);
 });
 
 
-$('.btnleft').click(function(){
-    $('.right').slideDown(1000);
+$('.btnright').click(function(){
+    $('.next').slideDown(1000);
 });
 
 
