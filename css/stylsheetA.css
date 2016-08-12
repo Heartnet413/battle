@@ -5,14 +5,19 @@
     font-style: italic;
 	text-shadow:1px 1px 1px #f00;
 }
+.top{
+	position: relative;
+}
 .left {
 	float: left;
-	background-color: #CCFFFF
+	background-color: #CCFFFF;
+
 }
 .right{
-	
+	position: absolute;
+    bottom: 0;
 	float: right;
-	background-color: #FFCCCC
+	background-color: #FFCCCC;
 }
 .box {
 	font-size: 20px;
