@@ -25,8 +25,16 @@
 	height: 50vw;
 	text-align: center;
 	position: relative;
-
 }
+
+.west-sentence{
+	position: absolute;
+}
+
+.east-sentence{
+	position: absolute;
+}
+
 .west-name{
 	display: inline-block;
     -webkit-writing-mode: vertical-rl;
@@ -50,12 +58,29 @@
     
 }
 
-img {
-	width:50%;
+.west-image,
+.east-image {
+	position: relative;
+}
+
+.west-sentence, 
+.east-sentence {
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+
+
+.west-logo,
+.east-logo {
+	width: 50%;
 	height: auto;
 	margin: auto;
 	padding-top: 100px;
 }
+
 .touhyoubtn{
 	position: fixed;
 	top: 50%;
