@@ -29,10 +29,12 @@
 
 .west-sentence{
 	position: absolute;
+	display: none;
 }
 
 .east-sentence{
 	position: absolute;
+	display: none;
 }
 
 .west-name{
