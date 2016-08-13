@@ -1,5 +1,5 @@
 
-header{
+.top-page{
 	 
 }
 
@@ -9,6 +9,7 @@ header{
 
 .top{
 	background-image: url("../images/top/fujinraijin.jpg");
+
 }
 
 /*.top{
@@ -24,18 +25,86 @@ header{
     text-align: center;
     
 }
-.btn{
-	width: 100vw;
-	height: 50px;
-}
-#top-btn{
-	width: 170px;
-	margin:0px 45vw;
-	padding: 10px 30px;
-	background-color:#248;
-	font-size: 40px
-	border-style:none;
+
+.top-btn{
+	height: 70px;
+	outline: none;
+	width: 300px;
+	font-size: 20px;
+	text-align: center;
+	display: block;
+	margin:10px auto;
+	text-decoration: none;
+	position: relative;
+	z-index: 2;
+	background-color: #333;
+	border: 2px solid #333;
+	color: #fff;
+	line-height: 70px;
+
 
 
 	 
 }
+
+.top-btn::before,
+.top-btn::after{
+	position: absolute;
+	z-index: -1;
+	display: block;
+	content: " ";
+	top: 0;
+	width: 50%;
+	height: 100%;
+	background-color: #333;
+}
+
+.top-btn::before {
+	right: 0;
+}
+.top-btn::after {
+	left: 0;
+}
+
+.top-btn,
+.top-btn::before,
+.top-btn::after{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	-webkit-transition: all .3s;
+	transition: all .3s;
+}
+
+
+.top-btn:hover {
+	background-color: #fff;
+	border-color: #59b1eb;
+	color: #59b1eb;
+}
+
+.top-btn:hover::before{
+	width: 0;
+	background-color: #59b1eb;
+}
+
+.top-btn:hover::after{
+	width: 0;
+	background-color: #59b1eb;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
