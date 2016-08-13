@@ -39,6 +39,10 @@ $('.btn').click(function(){
       'right': '-50vw'
     }, 1000);
 
+    setTimeout(function() {
+      $('.drink').hide();
+    }, 1000);
+
     $('.cup').fadeIn(2000);
 
   } else if(round==2) {
@@ -49,6 +53,10 @@ $('.btn').click(function(){
 
     $('.cup').find('.box.right').animate({
       'right': '-50vw'
+    }, 1000);
+
+    setTimeout(function() {
+      $('.cup').hide();
     }, 1000);
 
     $('.hair').fadeIn(2000);
@@ -63,6 +71,10 @@ $('.btn').click(function(){
       'right': '-50vw'
     }, 1000);
 
+    setTimeout(function() {
+      $('.hair').hide();
+    }, 1000);
+
     $('.cake').fadeIn(2000);
 
   } else if(round==4) {
@@ -73,6 +85,11 @@ $('.btn').click(function(){
     $('.cake').find('.box.right').animate({
       'right': '-50vw'
     }, 1000);
+
+    setTimeout(function() {
+      $('.cake').hide();
+    }, 1000);
+
 
   }
 
