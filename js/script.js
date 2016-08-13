@@ -24,16 +24,58 @@ function fadeinAnime () {
   $('.next').slideDown(1000);
 }
 
+
+var round = 1;
 // ボタんクリック
 $('.btn').click(function(){
-  // アニメーしょん
-  fadeinAnime();
+  console.log(round);
+  if (round==1) {
 
-  // クラスの付け替え（現在地の変更）
-  // ここでクラスの付け替え
-  $('.now').removeClass('now');
-  $('.next').addClass('now');
-  $('.next').removeClass('next');
+    $('.drink').find('.box.left').animate({
+      'left': '-50vw'
+    }, 1000);
+
+    $('.drink').find('.box.right').animate({
+      'right': '-50vw'
+    }, 1000);
+
+    $('.cup').fadeIn(2000);
+
+  } else if(round==2) {
+
+    $('.cup').find('.box.left').animate({
+      'left': '-50vw'
+    }, 1000);
+
+    $('.cup').find('.box.right').animate({
+      'right': '-50vw'
+    }, 1000);
+
+    $('.hair').fadeIn(2000);
+
+  } else if (round==3) {
+
+    $('.hair').find('.box.left').animate({
+      'left': '-50vw'
+    }, 1000);
+
+    $('.hair').find('.box.right').animate({
+      'right': '-50vw'
+    }, 1000);
+
+    $('.cake').fadeIn(2000);
+
+  } else if(round==4) {
+    $('.cake').find('.box.left').animate({
+      'left': '-50vw'
+    }, 1000);
+
+    $('.cake').find('.box.right').animate({
+      'right': '-50vw'
+    }, 1000);
+
+  }
+
+  round++;
 });
-
 
