@@ -1,16 +1,13 @@
 
+
 .top-page{
-	 
+	background-color:black;
 }
 
 .js-scrollFadein {
 	opacity: 0;
 }
 
-.top{
-	background-image: url("../images/top/fujinraijin.jpg");
-
-}
 
 /*.top{
 	opacity: 0.0;
@@ -18,11 +15,14 @@
 
 #top-title{
 	text-align: center;
-	padding: 400px 0px
+	margin: 400px 
+	color:white;
 }
 
 #top-sentence{
+	background-color: black;
     text-align: center;
+    color:white;
     
 }
 
