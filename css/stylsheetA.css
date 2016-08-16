@@ -1,5 +1,6 @@
 body {
 	overflow: hidden;
+	background-color: black;
 }
 .header{
 	text-align: center;
@@ -14,12 +15,16 @@ body {
 
 .left {
 	float: left;
+	background-image:  url("../images/backleft.jpg");
+	background-size: cover;
 		
 }
 .right{
 	position: absolute;
     bottom: 0;
 	float: right;
+	background-image:  url("../images/haikeiright.jpg");
+	background-size: cover;
 }
 
 .box {
