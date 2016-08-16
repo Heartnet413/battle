@@ -14,13 +14,12 @@ body {
 
 .left {
 	float: left;
-	background-color: #CCFFFF;	
+		
 }
 .right{
 	position: absolute;
     bottom: 0;
 	float: right;
-	background-color: #FFCCCC;
 }
 
 .box {
@@ -29,6 +28,7 @@ body {
 	height: 50vw;
 	text-align: center;
 	position: relative;
+	/*background-image: url("../images/backimage.jpg");*/
 }
 
 
@@ -37,6 +37,8 @@ body {
 	top: 0;
 	left: 0;
 	display: none;
+	background-image: url("../images/haikeipic.jpg");
+	background-size: cover;
 }
 
 .drink {
@@ -76,6 +78,7 @@ body {
     color: white;
     font-size: 50px;
     font-weight:bold;
+    
     
 }
 
