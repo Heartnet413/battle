@@ -30,6 +30,64 @@ $(function(){
 		}
  	});
 
-});
 
-console.log(round);
+	milkcocoa.dataStore('round1').stream().size(100).next(function(err, data) {
+		var west = 0;
+		var east = 0; // 投票数
+
+		for (var i=0; i<data.length; i++) {
+			var which = data[i].value.poll;
+			if (which == 'east') {
+				east++;
+			} else if (which == 'west') {
+				west++;
+			}
+		}
+		console.log('round1:', west, east);
+	});
+	
+	milkcocoa.dataStore('round2').stream().size(100).next(function(err, data) {
+		var west = 0;
+		var east = 0; // 投票数
+
+		for (var i=0; i<data.length; i++) {
+			var which = data[i].value.poll;
+			if (which == 'east') {
+				east++;
+			} else if (which == 'west') {
+				west++;
+			}
+		}
+		console.log('round2:', west, east);
+	});
+
+	milkcocoa.dataStore('round3').stream().size(100).next(function(err, data) {
+		var west = 0;
+		var east = 0; // 投票数
+
+		for (var i=0; i<data.length; i++) {
+			var which = data[i].value.poll;
+			if (which == 'east') {
+				east++;
+			} else if (which == 'west') {
+				west++;
+			}
+		}
+		console.log('round3:', west, east);
+	});
+
+	milkcocoa.dataStore('round4').stream().size(100).next(function(err, data) {
+		var west = 0;
+		var east = 0; // 投票数
+
+		for (var i=0; i<data.length; i++) {
+			var which = data[i].value.poll;
+			if (which == 'east') {
+				east++;
+			} else if (which == 'west') {
+				west++;
+			}
+		}
+		console.log('round4:', west, east);
+	});
+});
