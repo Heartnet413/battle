@@ -89,6 +89,9 @@ $('.btn').click(function(){
       $('.cake').hide();
     }, 2000);
 
+    window.location.href = 'result.html';
+
+
   }
 
   round++;

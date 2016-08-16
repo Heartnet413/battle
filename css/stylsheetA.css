@@ -38,6 +38,7 @@ body {
 	left: 0;
 	display: none;
 	background-image: url("../images/haikeipic.jpg");
+	background-size: cover;
 }
 
 .drink {
