@@ -21,7 +21,7 @@ $('.right').hover(
 // フェードインアニメーション
 function fadeinAnime () {
   // $('.now').fadeOut(1000);
-  $('.next').fadeIn(2000);
+  // $('.next').fadeIn(2000);
 }
 
 
