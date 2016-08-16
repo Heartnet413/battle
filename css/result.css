@@ -1,0 +1,16 @@
+.result {
+	width: 800px;
+	font-size: 0;
+}
+
+.west-result{
+	background-color: red;
+	display: inline-block;
+	height: 60px;
+}
+
+.east-result {
+	background-color: blue;
+	display: inline-block;
+	height: 60px;
+}

@@ -5,6 +5,25 @@ var ds2 = milkcocoa.dataStore('round2');
 var ds3 = milkcocoa.dataStore('round3');
 var ds4 = milkcocoa.dataStore('round4');
 
+var west = 32;
+var east = 71;
+
+var unit = 100 / (west + east);
+
+var west_width = Math.floor(unit * west);
+var east_width = Math.floor(unit * east);
+
+console.log(west_width, east_width);
+
+$(".west-result").css({
+	'width' :west_width + '%'
+})
+
+$(".east-result").css({
+	'width' :east_width + '%'
+})
+
+
 $(function(){
 	$(".btnleft").click(function(){
 		if(round==1){
