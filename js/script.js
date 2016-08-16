@@ -32,7 +32,7 @@ $('.btn').click(function(){
       'right': '-50vw'
     }, 2000);
 
-    $('.cup').fadeIn(2000);
+    // $('.cup').fadeIn(2000);
 
     setTimeout(function() {
       $('.drink').hide();
@@ -50,7 +50,7 @@ $('.btn').click(function(){
       'right': '-50vw'
     }, 2000);
 
-    $('.hair').fadeIn(2000);
+    // $('.hair').fadeIn(2000);
 
     setTimeout(function() {
       $('.cup').hide();
@@ -68,7 +68,7 @@ $('.btn').click(function(){
       'right': '-50vw'
     }, 2000);
 
-    $('.cake').fadeIn(2000);
+    // $('.cake').fadeIn(2000);
 
     setTimeout(function() {
       $('.hair').hide();
