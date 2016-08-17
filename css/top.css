@@ -1,52 +1,64 @@
-
-
 .top-page{
 	background-color:black;
+	height: 1000px;
+	position: relative;
 }
 
-.js-scrollFadein {
-	opacity: 0;
-}
-
-
-/*.top{
-	opacity: 0.0;
-}*/
-
-#top-title{
-	text-align: center;
-	margin: 400px 
+.top-sentence h1{
+	font-size: 60px;
+	font-weight: 200;
 	color:white;
+	width: 100%;
+	padding: 400px 0;
+	margin: 0 auto;
+	letter-spacing: 14px;
+	text-align: center;
+	-webkit-animation: OpeningSequence 5.2s linear forwards;
+	animation: OpeningSequence 5.2s linear forwards;
 }
 
-#top-sentence{
-	background-color: black;
-    text-align: center;
-    color:white;
-    
+
+@keyframes OpeningSequence {
+	0% {
+		text-shadow: 0 0 50px #fff;
+		letter-spacing: 60px;
+		opacity: 0.2;
+		transform: rotateY(-90deg);
+	}
+	50% {
+		text-shadow: 0 0 1px #fff;
+		letter-spacing: 14px;
+		opacity: 0.8;
+		transform: rotateY(0deg);
+	}
+	85% {
+		text-shadow: 0 0 1px #fff;
+		opacity: 0.8;
+		transform: rotateY(0deg) translateZ(100px);
+	}
+	100% {
+		text-shadow: 0 0 10px #fff;
+		opacity: 0;
+		transform: translateZ(130px);
+		pointer-events: none;
+	}
 }
-
-
 
 .top-btn{
-	height: 70px;
+	height: 120px;
 	outline: none;
-	width: 300px;
-	font-size: 20px;
+	width: 500px;
+	font-size: 40px;
 	text-align: center;
 	display: block;
-	margin:10px auto;
+	margin:700px auto;
 	text-decoration: none;
 	position: relative;
 	z-index: 2;
 	background-color: #333;
 	border: 2px solid #333;
 	color: #fff;
-	line-height: 70px;
-
-
-
-	 
+	line-height: 120px;
 }
 
 .top-btn::before,
