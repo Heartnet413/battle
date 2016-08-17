@@ -11,6 +11,7 @@ $(function(){
 	$(".btnleft").click(function(){
 		if(round==1){
 			ds1.push({poll: 'west'});
+			console.log('round1');
 		} else if(round==2){
  			ds2.push({poll: 'west'});           
 		} else if(round==3){
@@ -21,8 +22,10 @@ $(function(){
  	});
 
  	$(".btnright").click(function(){
+
 		if(round==1){
 			ds1.push({poll: 'east'});
+			console.log('round1');
 		} else if(round==2){
  			ds2.push({poll: 'east'});           
 		} else if(round==3){
@@ -38,6 +41,7 @@ $(function(){
 		var east = 0; // 投票数
 
 		for (var i=0; i<data.length; i++) {
+			var which = data[i].value.poll;
 			if (which == 'east') {
 				east++;
 			} else if (which == 'west') {
@@ -52,13 +56,13 @@ $(function(){
 
 		
 
-		$(".west-result1").css({
+		$(".west-result1").animate({
 			'width' :west_width + '%'
-		})
+		},1500)
 
-		$(".east-result1").css({
+		$(".east-result1").animate({
 			'width' :east_width + '%'
-		})
+		},1500)
 
 		$(".west-result1").text(west);
 		$(".east-result1").text(east);
@@ -102,8 +106,6 @@ $(function(){
 	milkcocoa.dataStore('round3').stream().size(100).next(function(err, data) {
 		var west = 0;
 		var east = 0; // 投票数
-
-		console.log(data);
 
 		for (var i=0; i<data.length; i++) {
 			var which = data[i].value.poll;

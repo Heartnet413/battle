@@ -1,7 +1,7 @@
 
 var looper;
-var SCREEN_WIDTH = 600;
-var SCREEN_HEIGHT = 600;
+var SCREEN_WIDTH = 700;
+var SCREEN_HEIGHT = 700;
 var canvas = document.getElementById('c');
 var context = canvas.getContext('2d');
 
@@ -90,3 +90,27 @@ function spring(na, nb) {
 		nb.vy -= ay;
 	}
 }
+
+
+$('.header').find('.a').fadeIn(1500);
+
+
+setTimeout(function(){
+$('.header').find('.b').fadeIn(1500);
+},500);
+
+
+setTimeout(function(){
+$('.header').find('.c').fadeIn(1500);
+},1000);
+
+
+setTimeout(function(){
+$('.header').find('.d').fadeIn(1500);
+},1500);
+
+
+
+
+
+
