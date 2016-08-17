@@ -97,17 +97,17 @@ $('.header').find('.a').fadeIn(1500);
 
 setTimeout(function(){
 $('.header').find('.b').fadeIn(1500);
-},500);
+},250);
 
 
 setTimeout(function(){
 $('.header').find('.c').fadeIn(1500);
-},1000);
+},500);
 
 
 setTimeout(function(){
 $('.header').find('.d').fadeIn(1500);
-},1500);
+},750);
 
 
 

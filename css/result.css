@@ -21,9 +21,9 @@ body{
 .header{
 	color: #fff;
 	text-shadow: 0 0 10px #fff,0 0 15px #fff;
-	display: flex;
-	justify-content: center;
-
+	/*display: flex;*/
+	/*justify-content: center;*/
+	padding-left: 330px;
 }
 .b,.c,.d{
 	text-align: center;
