@@ -5,23 +5,6 @@ var ds2 = milkcocoa.dataStore('round2');
 var ds3 = milkcocoa.dataStore('round3');
 var ds4 = milkcocoa.dataStore('round4');
 
-var west = 32;
-var east = 71;
-
-var unit = 100 / (west + east);
-
-var west_width = Math.floor(unit * west);
-var east_width = Math.floor(unit * east);
-
-console.log(west_width, east_width);
-
-$(".west-result").css({
-	'width' :west_width + '%'
-})
-
-$(".east-result").css({
-	'width' :east_width + '%'
-})
 
 
 $(function(){
@@ -55,14 +38,32 @@ $(function(){
 		var east = 0; // 投票数
 
 		for (var i=0; i<data.length; i++) {
-			var which = data[i].value.poll;
 			if (which == 'east') {
 				east++;
 			} else if (which == 'west') {
 				west++;
 			}
 		}
-		console.log('round1:', west, east);
+		
+		var unit = 100 / (west + east);
+
+		var west_width = Math.floor(unit * west);
+		var east_width = Math.floor(unit * east);
+
+		
+
+		$(".west-result1").css({
+			'width' :west_width + '%'
+		})
+
+		$(".east-result1").css({
+			'width' :east_width + '%'
+		})
+
+		$(".west-result1").text(west);
+		$(".east-result1").text(east);
+
+
 	});
 	
 	milkcocoa.dataStore('round2').stream().size(100).next(function(err, data) {
@@ -77,12 +78,32 @@ $(function(){
 				west++;
 			}
 		}
-		console.log('round2:', west, east);
+	
+		var unit = 100 / (west + east);
+
+		var west_width = Math.floor(unit * west);
+		var east_width = Math.floor(unit * east);
+
+		
+
+		$(".west-result2").animate({
+			'width' :west_width + '%'
+		}, 1500)
+
+		$(".east-result2").animate({
+			'width' :east_width + '%'
+		}, 1500)
+
+		$(".west-result2").text(west);
+		$(".east-result2").text(east);
+
 	});
 
 	milkcocoa.dataStore('round3').stream().size(100).next(function(err, data) {
 		var west = 0;
 		var east = 0; // 投票数
+
+		console.log(data);
 
 		for (var i=0; i<data.length; i++) {
 			var which = data[i].value.poll;
@@ -92,7 +113,25 @@ $(function(){
 				west++;
 			}
 		}
-		console.log('round3:', west, east);
+		
+		var unit = 100 / (west + east);
+
+		var west_width = Math.floor(unit * west);
+		var east_width = Math.floor(unit * east);
+
+
+		$(".west-result3").animate({
+			'width' :west_width + '%'
+		},1500)
+
+		$(".east-result3").animate({
+			'width' :east_width + '%'
+		},1500)
+
+		$(".west-result3").text(west);
+		$(".east-result3").text(east);
+
+
 	});
 
 	milkcocoa.dataStore('round4').stream().size(100).next(function(err, data) {
@@ -107,6 +146,25 @@ $(function(){
 				west++;
 			}
 		}
-		console.log('round4:', west, east);
+		
+		var unit = 100 / (west + east);
+
+		var west_width = Math.floor(unit * west);
+		var east_width = Math.floor(unit * east);
+
+		
+
+		$(".west-result4").animate({
+			'width' :west_width + '%'
+		},1500)
+
+		$(".east-result4").animate({
+			'width' :east_width + '%'
+		},1500)
+
+		$(".west-result4").text(west);
+		$(".east-result4").text(east);
+
+
 	});
 });
