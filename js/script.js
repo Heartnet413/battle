@@ -19,10 +19,10 @@ $('.right').hover(
 
 
 
-var round = 1;
+var round = 0;
 // ボタんクリック
 $('.btn').click(function(){
-  if (round==1) {
+  if (round==0) {
 
     $('.drink').find('.box.left').animate({
       'left': '-50vw'
@@ -40,7 +40,7 @@ $('.btn').click(function(){
 
     
 
-  } else if(round==2) {
+  } else if(round==1) {
 
     $('.cup').find('.box.left').animate({
       'left': '-50vw'
@@ -58,7 +58,7 @@ $('.btn').click(function(){
 
     
 
-  } else if (round==3) {
+  } else if (round==2) {
 
     $('.hair').find('.box.left').animate({
       'left': '-50vw'
@@ -76,7 +76,7 @@ $('.btn').click(function(){
 
     
 
-  } else if(round==4) {
+  } else if(round==3) {
     $('.cake').find('.box.left').animate({
       'left': '-50vw'
     }, 2000);
