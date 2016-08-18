@@ -8,6 +8,7 @@ var ds4 = milkcocoa.dataStore('round4');
 
 
 $(function(){
+
 	$(".btnleft").click(function(){
 		if(round==1){
 			ds1.push({poll: 'west'});
@@ -48,6 +49,35 @@ $(function(){
 				west++;
 			}
 		}
+
+		function rect() {
+		    $('.boxW1')
+		    .animate({
+		        opacity:"0.3"
+		    }, 800)
+		    .animate({
+		        opacity:"1"
+		    }, 800);
+		    setTimeout(rect, 1600); //アニメーションを繰り返す間隔
+		}
+
+		function lect() {
+		    $('.boxE1').animate({
+		        opacity:"0.3"
+		    }, 800).animate({
+		        opacity:"1"
+		    }, 800);
+		    setTimeout(lect, 1600); //アニメーションを繰り返す間隔
+		}
+
+
+		if(east > west) {
+			lect();
+		} else if (east < west){
+			rect();
+		} else {
+			// ここが0の場合の処理を書く
+		}
 		
 		var unit = 100 / (west + east);
 
@@ -82,6 +112,39 @@ $(function(){
 				west++;
 			}
 		}
+
+
+			function rect() {
+			    $('.boxW2')
+			    .animate({
+			        opacity:"0.3"
+			    }, 800)
+			    .animate({
+			        opacity:"1"
+			    }, 800);
+			    setTimeout(rect, 1600); //アニメーションを繰り返す間隔
+			}
+
+
+			function lect() {
+			    $('.boxE2').animate({
+			        opacity:"0.3"
+			    }, 800).animate({
+			        opacity:"1"
+			    }, 800);
+			    setTimeout(lect, 1600); //アニメーションを繰り返す間隔
+			}
+
+
+
+
+			if(east - west > 0) {
+				lect();
+			} 
+			else if (east - west < 0){
+				rect();
+			}
+		
 	
 		var unit = 100 / (west + east);
 
@@ -97,6 +160,10 @@ $(function(){
 		$(".east-result2").animate({
 			'width' :east_width + '%'
 		}, 1500)
+
+		$(".boxW2").animate({
+
+		})
 
 		$(".west-result2").text(west);
 		$(".east-result2").text(east);
@@ -115,6 +182,39 @@ $(function(){
 				west++;
 			}
 		}
+
+
+			function rect() {
+			    $('.boxW3')
+			    .animate({
+			        opacity:"0.3"
+			    }, 800)
+			    .
+			    animate({
+			        opacity:"1"
+			    }, 800);
+			    setTimeout(rect, 1600); //アニメーションを繰り返す間隔
+			}
+
+			function lect() {
+			    $('.boxE3').animate({
+			        opacity:"0.3"
+			    }, 800).animate({
+			        opacity:"1"
+			    }, 800);
+			    setTimeout(lect, 1600); //アニメーションを繰り返す間隔
+			}
+
+
+
+
+			if(east - west > 0) {
+				lect();
+			} 
+			else if (east - west < 0){
+				rect();
+			}
+		
 		
 		var unit = 100 / (west + east);
 
@@ -148,6 +248,40 @@ $(function(){
 				west++;
 			}
 		}
+
+
+			function rect() {
+			    $('.boxW4')
+			    .animate({
+			        opacity:"0.3"
+			    }, 800)
+			    .
+			    animate({
+			        opacity:"1"
+			    }, 800);
+			    setTimeout(rect, 1600); //アニメーションを繰り返す間隔
+			}
+
+
+			function lect() {
+			    $('.boxE4').animate({
+			        opacity:"0.3"
+			    }, 800).animate({
+			        opacity:"1"
+			    }, 800);
+			    setTimeout(lect, 1600); //アニメーションを繰り返す間隔
+			}
+
+
+
+
+			if(east - west > 0) {
+				lect();
+			} 
+			else if (east - west < 0){
+				rect();
+			}
+		
 		
 		var unit = 100 / (west + east);
 
