@@ -1,7 +1,15 @@
+body{
+	overflow: hidden;
+}
+
 .top-page{
 	background-color:black;
-	height: 1000px;
+	height: 100%;
 	position: relative;
+}
+
+.top-sentence{
+	height: 100%;
 }
 
 .top-sentence h1{
@@ -44,6 +52,16 @@
 	}
 }
 
+.page1{
+	width:100%;
+	height: 50%;
+}
+
+.page2{
+	width:100%;
+	height: 50%;
+}
+
 .top-btn{
 	height: 120px;
 	outline: none;
@@ -51,7 +69,7 @@
 	font-size: 40px;
 	text-align: center;
 	display: block;
-	margin:700px auto;
+	margin:450px auto;
 	text-decoration: none;
 	position: relative;
 	z-index: 2;
@@ -108,7 +126,18 @@
 }
 
 
+.btn{
+	position: absolute;
+	top:70vh;
+	left:39%;
+	background-color: black;
+	border:none;
+	display: none;
+}
 
+.btn img{
+	width: 100%;
+}
 
 
 

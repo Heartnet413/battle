@@ -1,18 +1,15 @@
+$(function(){
+	$('html,body').animate({scrollTop:0 },'1')
+})
 
 $(function(){
+	$('.btn').click(function(){
+		var a = $(".btn").index(this);
+		var p = $(".page2").eq(a).offset().top - 380;
+		$('html,body').animate({scrollTop : p} , 'slow');
+	});
 
-	$("#top-title").css({opacity:'0.0'}).animate({opacity:'1'},5000);
-    });
-	
-	
-var scrollFadein = $('.js-scrollFadein');
-$(window).on('scroll load', function() {
-
-    var scrollTop = $(window).scrollTop();
-    scrollFadein.each(function(i, elm) {
-        var targetPos = $(this).offset().top;
-        if (scrollTop > targetPos - $(window).height() + 100 ) {
-            $(this).animate({ opacity: 1 }, 500);
-        }
-    });
-});
+	setTimeout(function(){
+		$(".btn").fadeIn(2000);
+	},3000);
+})
